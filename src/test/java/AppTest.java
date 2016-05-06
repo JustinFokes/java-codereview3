@@ -22,13 +22,31 @@ public class AppTest extends FluentTest {
   @ClassRule
   public static ServerRule server = new ServerRule();
 
-  // @Rule
-  // public ClearRule clearRule = new ClearRule();
 
-  // @Test
-  // public void rootTest() {
-  //   goTo("http://localhost:4567/");
-  //   assertThat(pageSource()).contains("Something on your Index.vtl page");
-  // }
+  @Test
+  public void rootTest() {
+    goTo("http://localhost:4567/");
+    assertThat(pageSource()).contains("Salon Name");
+  }
+
+  @Test
+  public void stylistIsCreatedTest() {
+    goTo("http://localhost:4567/");
+    click("a", withText("Add A Stylist"));
+    fill("#name").with("Breanna");
+    submit(".btn");
+    assertThat(pageSource()).contains("Success!");
+  }
+
+  @Test
+  public void StylistNameIsDisplayedTest() {
+    goTo("http://localhost:4567/words/new");
+    click("a", withText("Add A Stylist"));
+    fill("#name").with("Jolene");
+    submit(".btn");
+    click("a", withText("Home"));
+    assertThat(pageSource()).contains("Jolene");
+  }
+
 
 }

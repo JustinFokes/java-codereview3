@@ -1,5 +1,10 @@
-<h1>Here's a Title!</h1>
+<h1>Salon Name:</h1>
 
-<a href="/categories">View Category List</a>
-<a href="/categories/new">Add new categories!</a>
-<a href="/tasks/new">Add a new task</a>
+<hr>
+	#foreach($stylist in $stylists)
+	<li><a href="/stylists/$stylist.getId()">$stylist.getName()</a></li>
+	#end
+<hr>
+
+<a href="/stylists/new">Add A Stylist</a>
+

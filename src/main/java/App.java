@@ -14,10 +14,30 @@ public class App {
     String layout = "templates/layout.vtl";
 
     get("/", (request, response) -> {
+      Map<String, Object> model = new HashMap<String, Object>();
+      model.put("stylists", Stylist.all());
+      model.put("template", "templates/index.vtl");
+      return new ModelAndView(model, layout);
+    }, new VelocityTemplateEngine());
+
+    get("/stylists/new", (request, response) -> {
+      Map<String, Object> model = new HashMap<String, Object>();
+      model.put("template", "templates/stylist-form.vtl");
+      return new ModelAndView(model, layout);
+    }, new VelocityTemplateEngine());
+
+
+    post("/success", (request, response) -> {
        Map<String, Object> model = new HashMap<String, Object>();
-       //model.put("classes", Class.all());
-       model.put("template", "templates/index.vtl");
+       String name = request.queryParams("name");
+       String phone = request.queryParams("phone");
+       String location = request.queryParams("dateRequested");
+       Stylist newStylist = new Stylist(name, phone, location);
+       newStylist.save();
+       model.put("stylist", newStylist);
+       model.put("stylists", Stylist.all());
+       model.put("template", "templates/submit-success.vtl");
        return new ModelAndView(model, layout);
      }, new VelocityTemplateEngine());
-   }
+  }
 }
