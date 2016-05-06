@@ -1,11 +1,21 @@
 <h1>$stylist.getName()</h1>
 
 <h5>Hello $stylist.getName(). The following clients have been assigned to you:
-<p><i>To delete a client, simply click on the name</i></p>
 <hr>
 #foreach($client in $clients)
-	<li><b><a href="/delete/$client.getId()">$client.getName()</a></b> requested a haircut on $client.getRequestedDate(), and has specifically asked for the following: <i>$client.getClientRequests()</i></li>. The clients phone number is $client.getPhone(), in case you need to reschedule.
-	<hr>
+	<li><b>$client.getName()</a></b> requested a haircut on $client.getRequestedDate(), and has specifically asked for the following: <i>$client.getClientRequests()</i></li>. The clients phone number is $client.getPhone(), in case you need to reschedule.
+<hr>
+
+<form action="/delete/$client.getId()" method="post">
+<div class="checkbox">
+  <label><input type="checkbox" value="">Remove $client.getName()</label>
+</div>
+	
+<button type="submit" class="btn">Submit!</button>
+ 
+</form>
+
+<hr>
 #end
 <hr>
 

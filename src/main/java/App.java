@@ -72,14 +72,12 @@ public class App {
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
 
-    get("/delete/:id", (request, response) -> {
+    post("/delete/:id", (request, response) -> {
       Map<String, Object> model = new HashMap<String, Object>();
       Client client = Client.find(Integer.parseInt(request.params(":id")));
       client.remove();
       model.put("template", "templates/delete-success.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
-
-
   }
 }
