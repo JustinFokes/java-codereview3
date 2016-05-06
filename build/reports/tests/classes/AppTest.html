@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">2.536s</div>
+<div class="counter">2.634s</div>
 <p>duration</p>
 </div>
 </td>
@@ -76,18 +76,14 @@
 <a name="clickingStylistDisplaysClients"></a>
 <h3 class="failures">clickingStylistDisplaysClients</h3>
 <span class="code">
-<pre>org.openqa.selenium.StaleElementReferenceException: Element appears to be stale. Did you navigate away from the page that contained it?  And is the current window focussed the same as the one holding this element?
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+<pre>org.openqa.selenium.NoSuchElementException: No element is displayed or enabled. Can't set a new value.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
 System info: host: 'Justins-MacBook-Pro.local', ip: '10.46.15.84', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_77'
-Driver info: driver.version: HtmlUnitDriver
-	at org.openqa.selenium.htmlunit.HtmlUnitDriver.assertElementNotStale(HtmlUnitDriver.java:738)
-	at org.openqa.selenium.htmlunit.HtmlUnitWebElement.assertElementNotStale(HtmlUnitWebElement.java:883)
-	at org.openqa.selenium.htmlunit.HtmlUnitWebElement.isEnabled(HtmlUnitWebElement.java:490)
-	at org.fluentlenium.core.domain.FluentWebElement.isEnabled(FluentWebElement.java:149)
-	at org.fluentlenium.core.domain.FluentList.click(FluentList.java:61)
-	at org.fluentlenium.core.Fluent.click(Fluent.java:442)
-	at AppTest.clickingStylistDisplaysClients(AppTest.java:67)
+Driver info: driver.version: unknown
+	at org.fluentlenium.core.domain.FluentList.text(FluentList.java:93)
+	at org.fluentlenium.core.action.FillConstructor.with(FillConstructor.java:46)
+	at AppTest.clickingStylistDisplaysClients(AppTest.java:73)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -96,6 +92,7 @@ Driver info: driver.version: HtmlUnitDriver
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
@@ -144,18 +141,14 @@ Driver info: driver.version: HtmlUnitDriver
 <a name="stylistClientFormIsDisplayed"></a>
 <h3 class="failures">stylistClientFormIsDisplayed</h3>
 <span class="code">
-<pre>org.openqa.selenium.StaleElementReferenceException: Element appears to be stale. Did you navigate away from the page that contained it?  And is the current window focussed the same as the one holding this element?
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+<pre>org.openqa.selenium.NoSuchElementException: No Element found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
 System info: host: 'Justins-MacBook-Pro.local', ip: '10.46.15.84', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_77'
-Driver info: driver.version: HtmlUnitDriver
-	at org.openqa.selenium.htmlunit.HtmlUnitDriver.assertElementNotStale(HtmlUnitDriver.java:738)
-	at org.openqa.selenium.htmlunit.HtmlUnitWebElement.assertElementNotStale(HtmlUnitWebElement.java:883)
-	at org.openqa.selenium.htmlunit.HtmlUnitWebElement.isEnabled(HtmlUnitWebElement.java:490)
-	at org.fluentlenium.core.domain.FluentWebElement.isEnabled(FluentWebElement.java:149)
-	at org.fluentlenium.core.domain.FluentList.click(FluentList.java:61)
+Driver info: driver.version: unknown
+	at org.fluentlenium.core.domain.FluentList.click(FluentList.java:57)
 	at org.fluentlenium.core.Fluent.click(Fluent.java:442)
-	at AppTest.stylistClientFormIsDisplayed(AppTest.java:56)
+	at AppTest.stylistClientFormIsDisplayed(AppTest.java:61)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -164,6 +157,7 @@ Driver info: driver.version: HtmlUnitDriver
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
@@ -221,27 +215,27 @@ Driver info: driver.version: HtmlUnitDriver
 </thead>
 <tr>
 <td class="success">StylistNameIsDisplayedTest</td>
-<td>0.277s</td>
+<td>0.232s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="failures">clickingStylistDisplaysClients</td>
-<td>0.535s</td>
+<td>0.629s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="success">rootTest</td>
-<td>0.065s</td>
+<td>0.037s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="failures">stylistClientFormIsDisplayed</td>
-<td>1.400s</td>
+<td>1.535s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="success">stylistIsCreatedTest</td>
-<td>0.259s</td>
+<td>0.201s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -249,854 +243,1134 @@ Driver info: driver.version: HtmlUnitDriver
 <div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>[Thread-4] INFO org.eclipse.jetty.util.log - Logging initialized @766ms
+<pre>[Thread-4] INFO org.eclipse.jetty.util.log - Logging initialized @782ms
 [Thread-4] INFO spark.webserver.JettySparkServer - == Spark has ignited ...
 [Thread-4] INFO spark.webserver.JettySparkServer - &gt;&gt; Listening on 0.0.0.0:4567
 [Thread-4] INFO org.eclipse.jetty.server.Server - jetty-9.3.2.v20150730
-[Thread-4] INFO org.eclipse.jetty.server.ServerConnector - Started ServerConnector@528bb630{HTTP/1.1,[http/1.1]}{0.0.0.0:4567}
-[Thread-4] INFO org.eclipse.jetty.server.Server - Started @896ms
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+[Thread-4] INFO org.eclipse.jetty.server.ServerConnector - Started ServerConnector@781ae714{HTTP/1.1,[http/1.1]}{0.0.0.0:4567}
+[Thread-4] INFO org.eclipse.jetty.server.Server - Started @909ms
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1299:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1455:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1591:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1596:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1601:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1778:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1936:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2094:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2447:15] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
 WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [2447:15] Ignoring the whole rule.
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2605:15] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
 WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [2605:15] Ignoring the whole rule.
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2917:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2983:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2993:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2999:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [3589:17] Error in expression; ':' found after identifier &quot;progid&quot;.
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [3638:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4061:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4079:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4126:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4147:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4175:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4180:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4197:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4224:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4237:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4250:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4262:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4291:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4321:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4334:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4357:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4381:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4431:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4439:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4479:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4486:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4553:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4649:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4989:15] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
 WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [4989:15] Ignoring the whole rule.
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [5974:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [5987:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6259:12] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
 WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [6259:12] Ignoring the whole rule.
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6339:17] Error in expression; ':' found after identifier &quot;progid&quot;.
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6349:17] Error in expression; ':' found after identifier &quot;progid&quot;.
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6437:15] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
 WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [6437:15] Ignoring the whole rule.
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6573:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6588:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6593:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6598:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6603:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6618:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6623:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6628:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6633:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6648:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6653:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6658:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6663:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6678:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6683:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6688:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6693:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6698:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6703:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:45 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6708:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1299:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1455:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1591:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1596:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1601:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1778:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1936:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2094:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2447:15] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
 WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [2447:15] Ignoring the whole rule.
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2605:15] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
 WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [2605:15] Ignoring the whole rule.
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2917:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2983:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2993:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2999:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [3589:17] Error in expression; ':' found after identifier &quot;progid&quot;.
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [3638:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4061:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4079:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4126:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4147:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4175:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4180:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4197:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4224:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4237:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4250:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4262:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4291:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4321:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4334:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4357:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4381:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4431:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4439:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4479:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4486:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4553:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4649:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4989:15] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
 WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [4989:15] Ignoring the whole rule.
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [5974:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [5987:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6259:12] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
 WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [6259:12] Ignoring the whole rule.
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6339:17] Error in expression; ':' found after identifier &quot;progid&quot;.
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6349:17] Error in expression; ':' found after identifier &quot;progid&quot;.
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6437:15] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
 WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [6437:15] Ignoring the whole rule.
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6573:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6588:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6593:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6598:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6603:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6618:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6623:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6628:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6633:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6648:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6653:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6658:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6663:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6678:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6683:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6688:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6693:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6698:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6703:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6708:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1299:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1455:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1591:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1596:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1601:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1778:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1936:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2094:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2447:15] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
 WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [2447:15] Ignoring the whole rule.
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2605:15] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
 WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [2605:15] Ignoring the whole rule.
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2917:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2983:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2993:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2999:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [3589:17] Error in expression; ':' found after identifier &quot;progid&quot;.
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [3638:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4061:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4079:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4126:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4147:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4175:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4180:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4197:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4224:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4237:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4250:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4262:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4291:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4321:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4334:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4357:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4381:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4431:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4439:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4479:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4486:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4553:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4649:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4989:15] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
 WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [4989:15] Ignoring the whole rule.
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [5974:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [5987:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6259:12] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+May 06, 2016 4:18:31 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
 WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [6259:12] Ignoring the whole rule.
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6339:17] Error in expression; ':' found after identifier &quot;progid&quot;.
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6349:17] Error in expression; ':' found after identifier &quot;progid&quot;.
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6437:15] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
 WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [6437:15] Ignoring the whole rule.
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6573:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6588:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6593:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6598:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6603:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6618:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6623:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6628:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6633:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6648:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6653:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6658:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6663:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6678:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6683:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6688:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6693:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6698:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6703:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6708:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1299:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1455:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1591:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1596:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1601:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1778:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1936:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2094:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2447:15] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
 WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [2447:15] Ignoring the whole rule.
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2605:15] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
 WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [2605:15] Ignoring the whole rule.
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2917:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2983:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2993:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2999:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [3589:17] Error in expression; ':' found after identifier &quot;progid&quot;.
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [3638:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4061:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4079:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4126:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4147:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4175:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4180:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4197:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4224:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4237:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4250:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4262:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4291:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4321:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4334:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4357:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4381:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4431:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4439:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4479:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4486:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4553:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4649:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4989:15] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
 WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [4989:15] Ignoring the whole rule.
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [5974:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [5987:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6259:12] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
 WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [6259:12] Ignoring the whole rule.
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6339:17] Error in expression; ':' found after identifier &quot;progid&quot;.
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6349:17] Error in expression; ':' found after identifier &quot;progid&quot;.
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6437:15] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
 WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [6437:15] Ignoring the whole rule.
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6573:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6588:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6593:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6598:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6603:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6618:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6623:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6628:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6633:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6648:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6653:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6658:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6663:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6678:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6683:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6688:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6693:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6698:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6703:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:46 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6708:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1299:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1455:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1591:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1596:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1601:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1778:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1936:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2094:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2447:15] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
 WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [2447:15] Ignoring the whole rule.
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2605:15] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
 WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [2605:15] Ignoring the whole rule.
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2917:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2983:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2993:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2999:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [3589:17] Error in expression; ':' found after identifier &quot;progid&quot;.
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [3638:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4061:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4079:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4126:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4147:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4175:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4180:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4197:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4224:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4237:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4250:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4262:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4291:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4321:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4334:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4357:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4381:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4431:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4439:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4479:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4486:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4553:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4649:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4989:15] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
 WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [4989:15] Ignoring the whole rule.
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [5974:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [5987:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6259:12] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
 WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [6259:12] Ignoring the whole rule.
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6339:17] Error in expression; ':' found after identifier &quot;progid&quot;.
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6349:17] Error in expression; ':' found after identifier &quot;progid&quot;.
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6437:15] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
 WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [6437:15] Ignoring the whole rule.
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6573:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6588:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6593:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6598:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6603:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6618:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6623:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6628:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6633:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6648:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6653:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6658:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6663:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6678:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6683:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6688:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6693:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6698:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6703:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6708:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1299:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1455:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1591:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1596:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1601:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1778:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1936:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2094:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2447:15] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
 WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [2447:15] Ignoring the whole rule.
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2605:15] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
 WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [2605:15] Ignoring the whole rule.
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2917:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2983:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2993:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2999:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [3589:17] Error in expression; ':' found after identifier &quot;progid&quot;.
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [3638:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4061:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4079:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4126:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4147:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4175:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4180:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4197:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4224:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4237:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4250:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4262:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4291:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4321:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4334:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4357:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4381:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4431:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4439:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4479:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4486:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4553:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4649:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4989:15] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
 WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [4989:15] Ignoring the whole rule.
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [5974:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [5987:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6259:12] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
 WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [6259:12] Ignoring the whole rule.
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6339:17] Error in expression; ':' found after identifier &quot;progid&quot;.
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6349:17] Error in expression; ':' found after identifier &quot;progid&quot;.
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6437:15] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
 WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [6437:15] Ignoring the whole rule.
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6573:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6588:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6593:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6598:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6603:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6618:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6623:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6628:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6633:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6648:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6653:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6658:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6663:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6678:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6683:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6688:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6693:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6698:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6703:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
-May 06, 2016 12:07:47 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6708:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1299:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1455:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1591:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1596:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1601:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1778:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1936:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2094:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2447:15] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [2447:15] Ignoring the whole rule.
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2605:15] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [2605:15] Ignoring the whole rule.
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2917:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2983:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2993:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2999:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [3589:17] Error in expression; ':' found after identifier &quot;progid&quot;.
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [3638:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4061:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4079:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4126:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4147:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4175:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4180:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4197:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4224:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4237:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4250:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4262:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4291:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4321:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4334:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4357:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4381:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4431:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4439:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4479:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4486:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4553:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4649:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4989:15] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [4989:15] Ignoring the whole rule.
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [5974:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [5987:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6259:12] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [6259:12] Ignoring the whole rule.
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6339:17] Error in expression; ':' found after identifier &quot;progid&quot;.
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6349:17] Error in expression; ':' found after identifier &quot;progid&quot;.
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6437:15] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [6437:15] Ignoring the whole rule.
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6573:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6588:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6593:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6598:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6603:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6618:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6623:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6628:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6633:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6648:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6653:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6658:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6663:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6678:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6683:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6688:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6693:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6698:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6703:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:32 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6708:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1299:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1455:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1591:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1596:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1601:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1778:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [1936:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2094:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2447:15] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [2447:15] Ignoring the whole rule.
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2605:15] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [2605:15] Ignoring the whole rule.
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2917:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2983:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2993:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [2999:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [3589:17] Error in expression; ':' found after identifier &quot;progid&quot;.
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [3638:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4061:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4079:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4126:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4147:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4175:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4180:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4197:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4224:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4237:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4250:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4262:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4291:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4321:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4334:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4357:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4381:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4431:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4439:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4479:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4486:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4553:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4649:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [4989:15] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [4989:15] Ignoring the whole rule.
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [5974:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [5987:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6259:12] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [6259:12] Ignoring the whole rule.
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6339:17] Error in expression; ':' found after identifier &quot;progid&quot;.
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6349:17] Error in expression; ':' found after identifier &quot;progid&quot;.
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6437:15] Error in @media rule. (Invalid token &quot;and&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &lt;COMMA&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+WARNING: CSS warning: 'http://localhost:4567/bootstrap.css' [6437:15] Ignoring the whole rule.
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6573:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6588:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6593:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6598:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6603:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6618:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6623:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6628:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6633:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6648:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6653:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6658:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6663:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6678:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6683:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6688:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6693:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6698:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6703:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
+May 06, 2016 4:18:33 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6708:8] Error in media list. (Invalid token &quot;(&quot;. Was expecting one of: &lt;S&gt;, &lt;IDENT&gt;.)
 [Test worker] INFO spark.webserver.JettySparkServer - &gt;&gt;&gt; Spark shutting down ...
-[Test worker] INFO org.eclipse.jetty.server.ServerConnector - Stopped ServerConnector@528bb630{HTTP/1.1,[http/1.1]}{0.0.0.0:4567}
+[Test worker] INFO org.eclipse.jetty.server.ServerConnector - Stopped ServerConnector@781ae714{HTTP/1.1,[http/1.1]}{0.0.0.0:4567}
 [Test worker] INFO spark.webserver.JettySparkServer - done
 </pre>
 </span>
@@ -1109,7 +1383,7 @@ WARNING: CSS error: 'http://localhost:4567/bootstrap.css' [6708:8] Error in medi
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 2.12</a> at May 6, 2016 12:07:47 PM</p>
+<a href="http://www.gradle.org">Gradle 2.12</a> at May 6, 2016 4:18:33 PM</p>
 </div>
 </div>
 </body>
