@@ -4,7 +4,7 @@
 <p><i>To delete a client, simply click on the name</i></p>
 <hr>
 #foreach($client in $clients)
-	<li><b><a href="/delete">$client.getName()</a></b> requested a haircut on $client.getRequestedDate(), and has specifically asked for the following: <i>$client.getClientRequests()</i></li>. The clients phone number is $client.getPhone(), in case you need to reschedule.
+	<li><b><a href="/delete/$client.getId()">$client.getName()</a></b> requested a haircut on $client.getRequestedDate(), and has specifically asked for the following: <i>$client.getClientRequests()</i></li>. The clients phone number is $client.getPhone(), in case you need to reschedule.
 	<hr>
 #end
 <hr>
