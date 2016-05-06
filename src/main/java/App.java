@@ -74,11 +74,12 @@ public class App {
 
     get("/delete/:id", (request, response) -> {
       Map<String, Object> model = new HashMap<String, Object>();
-      Client client = Client.find(Integer.parseInt(request.params("id")));
-      int clientId = Integer.parseInt((request.params(":id")));
-      model.put("clients", Client.remove(clientId));
-      model.put("template", "templates/delete-form.vtl");
+      Client client = Client.find(Integer.parseInt(request.params(":id")));
+      client.remove();
+      model.put("template", "templates/delete-success.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
+
+
   }
 }

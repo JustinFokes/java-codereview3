@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="StylistTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2016-05-06T17:23:36" hostname="Justins-MacBook-Pro.local" time="0.058">
+<testsuite name="StylistTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2016-05-06T19:07:47" hostname="Justins-MacBook-Pro.local" time="0.07">
   <properties/>
-  <testcase name="stylist_instantiatesCorrectly_true" classname="StylistTest" time="0.006"/>
-  <testcase name="getPhone_getsStylistPhoneNumber_String" classname="StylistTest" time="0.005"/>
-  <testcase name="getLocation_getsStylistLocationCorrectly_String" classname="StylistTest" time="0.008"/>
-  <testcase name="getStylistId_returnsIdUponSave_int" classname="StylistTest" time="0.017"/>
+  <testcase name="stylist_instantiatesCorrectly_true" classname="StylistTest" time="0.017"/>
+  <testcase name="getPhone_getsStylistPhoneNumber_String" classname="StylistTest" time="0.007"/>
+  <testcase name="getLocation_getsStylistLocationCorrectly_String" classname="StylistTest" time="0.006"/>
+  <testcase name="getStylistId_returnsIdUponSave_int" classname="StylistTest" time="0.018"/>
   <testcase name="findStylist_findStylistById_String" classname="StylistTest" time="0.016"/>
   <testcase name="getName_getsStylistNameCorrectly_String" classname="StylistTest" time="0.005"/>
   <system-out><![CDATA[]]></system-out>

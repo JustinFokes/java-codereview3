@@ -79,13 +79,12 @@ public class Client {
 		}
 	}
 
-	public static Client remove(int id) {
+	public void remove() {
 	    try(Connection con = DB.sql2o.open()){
-		    String sql = "DELETE * FROM clients WHERE id=:id";
-		    Client client = con.createQuery(sql)
-		    .addParameter("id", id)
-		    .executeAndFetchFirst(Client.class);
-		    return client;
+		    String sql = "DELETE FROM clients WHERE id=:id";
+		    con.createQuery(sql)
+		    .addParameter("id", this.id)
+		    .executeUpdate();
     	}
   	}
 }
