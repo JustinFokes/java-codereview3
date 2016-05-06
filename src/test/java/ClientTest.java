@@ -55,14 +55,6 @@ public class ClientTest {
     Client clientId = Client.find(client.getId());
     assertEquals("Justin", clientId.getName());
   }
-
-  @Test
-  public void remove_removesClientById_true() {
-    Client client = new Client("Justin", "253-448-1364", "06-16-2016", "Client needs a little of the top, no biggie"); 
-    client.saveClientToStylist(5);
-    client.remove();
-    assertEquals("", client.all());
-  }
 }
 
 

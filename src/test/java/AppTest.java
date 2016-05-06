@@ -16,7 +16,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class AppTest extends FluentTest {
   @Rule
   public DatabaseRule database = new DatabaseRule();
-  
+
   public WebDriver webDriver = new HtmlUnitDriver();
 
   @Override
@@ -58,7 +58,6 @@ public class AppTest extends FluentTest {
     submit(".btn");
     click("a", withText("Home"));
     click("a", withText("Breanna"));
-    click("a", withText("Add client"));
     assertThat(pageSource()).contains("Add a new client with details about appointment");
   }
 
