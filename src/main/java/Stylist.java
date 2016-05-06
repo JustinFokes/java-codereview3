@@ -8,7 +8,7 @@ public class Stylist {
   private String name;
   private String phone;
   private String location;
-  //private List<Client> clientList;
+  private List<Client> clientList;
 
   public Stylist(String name, String phone, String location) {
     this.name = name;
@@ -72,15 +72,6 @@ public class Stylist {
       return stylist;
     }
   }
-
-  // public List<Client> getClients() {
-  //   try(Connection con = DB.sql2o.open()){
-  //     String sql = "SELECT * FROM clients WHERE clientId=:id";
-  //     return con.createQuery(sql)
-  //     .addParameter("id", this.id)
-  //     .executeAndFetch(Client.class);
-  //   }
-  // }
 }
 
 

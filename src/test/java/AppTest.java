@@ -40,13 +40,36 @@ public class AppTest extends FluentTest {
 
   @Test
   public void StylistNameIsDisplayedTest() {
-    goTo("http://localhost:4567/words/new");
-    click("a", withText("Add A Stylist"));
+    goTo("http://localhost:4567/stylists/new");
+    fill("#name").with("Breanna");
+    submit(".btn");
+    click("a", withText("Home"));
+    assertThat(pageSource()).contains("Breanna");
+  }
+
+  @Test
+  public void stylistClientFormIsDisplayed() {
+    goTo("http://localhost:4567/stylists/new");
+    fill("#name").with("Breanna");
+    submit(".btn");
+    click("a", withText("Home"));
+    click("a", withText("Breanna"));
+    click("a", withText("Add client"));
+    assertThat(pageSource()).contains("Add a new client with details about appointment");
+  }
+
+  @Test
+  public void clickingStylistDisplaysClients() {
+    goTo("http://localhost:4567/stylists/new");
     fill("#name").with("Jolene");
     submit(".btn");
     click("a", withText("Home"));
-    assertThat(pageSource()).contains("Jolene");
+    click("a", withText("Jolene"));
+    click("a", withText("Add a new client with details about appointment"));
+    fill("name").with("Jacob");
+    submit(".btn");
+    click("a", withText("Home"));
+    click("a", withText("Jolene"));
+    assertThat(pageSource()).contains("Jacob");
   }
-
-
 }

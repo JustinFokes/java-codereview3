@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ClientTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2016-05-06T04:18:26" hostname="Justins-MacBook-Pro.local" time="0.088">
+<testsuite name="ClientTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2016-05-06T17:05:51" hostname="Justins-MacBook-Pro.local" time="0.082">
   <properties/>
   <testcase name="save_clientSavedToStylist_int" classname="ClientTest" time="0.024"/>
-  <testcase name="clientPhone_getPhone_String" classname="ClientTest" time="0.008"/>
-  <testcase name="client_instantiatesCorrectly_true" classname="ClientTest" time="0.008"/>
+  <testcase name="clientPhone_getPhone_String" classname="ClientTest" time="0.007"/>
+  <testcase name="client_instantiatesCorrectly_true" classname="ClientTest" time="0.007"/>
   <testcase name="clientGetName_getName_String" classname="ClientTest" time="0.008"/>
-  <testcase name="clientGetRequests_getClientRequests_String" classname="ClientTest" time="0.007"/>
-  <testcase name="find_findReviewById_int" classname="ClientTest" time="0.023"/>
-  <testcase name="clientGetRequestedDate_getRequestedDate_String" classname="ClientTest" time="0.007"/>
+  <testcase name="clientGetRequests_getClientRequests_String" classname="ClientTest" time="0.006"/>
+  <testcase name="find_findReviewById_int" classname="ClientTest" time="0.02"/>
+  <testcase name="clientGetRequestedDate_getRequestedDate_String" classname="ClientTest" time="0.005"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

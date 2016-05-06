@@ -10,12 +10,11 @@ public class Client {
 	private String clientRequests;
 	private int stylistId;
 
-	public Client(String name, String phone, String requestedDate, String clientRequests, int stylistId) {
+	public Client(String name, String phone, String requestedDate, String clientRequests) {
 		this.name = name;
 		this.phone = phone;
 		this.requestedDate = requestedDate;
 		this.clientRequests = clientRequests;
-		this.stylistId = stylistId;
 	}
 
 	public int getId() {
@@ -70,6 +69,15 @@ public class Client {
 		    return client;
     	}
   	}
+
+  	public static List<Client> getClients(int id) {
+	    try(Connection con = DB.sql2o.open()){
+		    String sql = "SELECT * FROM clients WHERE stylistId=:id";
+		    return con.createQuery(sql)
+		    .addParameter("id", id)
+		    .executeAndFetch(Client.class);
+		}
+	}
 }
 
 
